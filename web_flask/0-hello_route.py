@@ -2,9 +2,9 @@
 """This script initializes a Flask web server application"""
 from flask import Flask
 
-web_app = Flask(__name__)
+app = Flask(__name__)
 
-@web_app.route('/', strict_slashes=False)
+@app.route('/', strict_slashes=False)
 def hello_hbnb():
     """
     Displays a greeting message
@@ -15,4 +15,4 @@ if __name__ == '__main__':
     """
     Executes the Flask web server if this module is run as the main program
     """
-    web_app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5000)
